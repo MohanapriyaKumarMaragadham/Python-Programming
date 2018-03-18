@@ -8,6 +8,6 @@ for i in (2,a/2):
 	else:
 		r=0
 if(r==0):
-	print "prime"
+	print "yes"
 else:
-	print "not"
+	print "no"
