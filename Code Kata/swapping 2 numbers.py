@@ -1,8 +1,8 @@
 a,b=raw_input().split()
 a=int(a)
 b=int(b)
-temp=a
+res=a
 a=b
-b=temp
+b=res
 print a,
 print b
