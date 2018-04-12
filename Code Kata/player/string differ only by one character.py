@@ -1,6 +1,7 @@
 a,b=raw_input().split()
 c=len(a)
 d=len(b)
+count=0
 if(c==d):
 	for i in range(0,c):
 		z=a[i]
