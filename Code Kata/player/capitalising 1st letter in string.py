@@ -12,7 +12,7 @@ for i in range(0,z):
 	elif(i>0):
 		e.append(a[i])
 n="".join(e)
-print n
+print n,
 for i in range(0,y):
 	if(i==0):
 		s=b[i].upper()
