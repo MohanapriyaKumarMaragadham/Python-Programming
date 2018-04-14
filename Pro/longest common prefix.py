@@ -27,7 +27,7 @@ s=list(set(e))
 d=len(s)
 for i in range(0,d):
 	w=s[i]
-	print w
+print w
 
 	
 	
