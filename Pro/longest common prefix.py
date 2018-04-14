@@ -7,7 +7,7 @@ o=len(c)
 l=[]
 e=[]
 for i in range(0,o-1):
-	s=c[i]
+	s=c[0]
 	f=c[i+1]
 	q=len(s)
 	t=len(f)
@@ -19,16 +19,38 @@ for i in range(0,o-1):
 		u=q
 	for j in range(0,u):
 		if(s[j]==f[j]):
-			l.append(s[j])
+			l.append(f[j])
+		else:
+			break
 	r="".join(l)
 	e.append(r)
 	l=[]
-s=list(set(e))
-d=len(s)
-for i in range(0,d):
-	w=s[i]
-print w
-
+h=len(e)
+w=[]
+v=[]
+if h==1:
+	print e[0]
+else:
+	for i in range(0,h-1):
+		s=e[0]
+		f=e[i+1]
+		q=len(s)
+		t=len(f)
+		if q>t:
+			u=t
+		elif q<t:
+			u=q
+		elif q==t:
+			u=q
+		for j in range(0,u):
+			if(s[j]==f[j]):
+				w.append(f[j])
+			else:
+				break
+		r="".join(w)
+		v.append(r)
+		w=[]
+	print v[0]
 	
 	
 	
