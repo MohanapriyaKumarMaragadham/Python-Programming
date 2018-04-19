@@ -1,2 +1,2 @@
-a=raw_input()
-print len(a)
+no_digits=raw_input()
+print len(no_digits)
