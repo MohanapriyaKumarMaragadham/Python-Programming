@@ -14,17 +14,15 @@ for i in range(0,len(l)):
     t=l[i]
     for j in range(0,len(k)):
         if '0' in k:
-          yt=k.count('0')
-          print yt
-          for wt in range(0,yt):
-            u=k.index('0')
-            ui.append(u)
-          k=[]
-          for r in range(0,len(l[i])):
-              k.append('0')
-          oy.append(k)
-          k=[]
-          break
+            u=[index for index, ink in enumerate(k) if ink=='0']
+            for et in range(0,len(u)):
+                ui.append(u[et])
+            k=[]
+            for r in range(0,len(l[i])):
+                k.append('0')
+            oy.append(k)
+            k=[]
+            break
         else:
             s=s+1
     if s==b:
@@ -33,7 +31,6 @@ for i in range(0,len(l)):
         oy.append(pos)
         pos=[]
     s=0
-print ui
 for i in oy:
   new=i
   for j in range(0,len(new)):
