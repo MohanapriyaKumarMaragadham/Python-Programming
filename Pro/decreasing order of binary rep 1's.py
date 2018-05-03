@@ -20,3 +20,7 @@ if a.isdigit():
 		for i in range(1,len(f)):
 			print f[-i],
 		print f[0]
+	else:
+		print "Invalid"
+else:
+	print "Invalid"
