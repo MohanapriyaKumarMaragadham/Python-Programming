@@ -19,7 +19,7 @@ if a.isdigit() and b.isdigit():
 			if r[0].isdigit() and r[1].isdigit():
 				for i in range(int(r[0])-1,int(r[1])):
 					g.append(int(c[i]))
-				print min(g)
+				print max(g)
 				g=[]
 			else:
 				continue
