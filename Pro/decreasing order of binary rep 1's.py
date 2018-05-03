@@ -18,7 +18,7 @@ if a.isdigit():
 		d = {l[x]:k[x] for x in range(a)}
 		f=[i[0] for i in sorted(d.items(), key=lambda x:x[1])]
 		for i in range(1,len(f)):
-			print f[-i],
+			print f[-i]
 		print f[0]
 	else:
 		print "Invalid"
