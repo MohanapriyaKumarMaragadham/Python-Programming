@@ -3,7 +3,7 @@ b=a[0]
 c=a[1]
 l=0
 for i in range(0,len(b)):
-	for j in range(i+1,len(b)):
+	for j in range(i+1,len(b)+1):
 		g=b[i:j]
 		if g in c:
 			if len(g)>1:
